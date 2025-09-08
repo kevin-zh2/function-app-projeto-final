@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
@@ -21,7 +20,7 @@ class Produto(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(100), unique=True, nullable=False)
 
-# Routes
+
 @app.route("/produtos", methods=["GET"])
 def consultar_produtos():
     produtos = Produto.query.all()

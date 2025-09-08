@@ -1,8 +1,7 @@
 # main.py
 import azure.functions as func
-from azure_functions_wsgi import WsgiMiddleware
-from app import app  # 导入 Flask app
-
+from azure.functions import WsgiMiddleware
+from app import app
 
 wsgi_app = WsgiMiddleware(app)
 
