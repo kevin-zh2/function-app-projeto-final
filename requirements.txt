@@ -3,4 +3,3 @@ flask_sqlalchemy
 sqlalchemy
 pyodbc
 azure-functions
-azure-functions-wsgi
